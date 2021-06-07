@@ -18,6 +18,11 @@ http.createServer((req, res) => {
   // Send a simple message in HTML.
   res.write('<h1>I’m a Node app!</h1>');
   res.write('<p>And I’m <em>sooooo</em> secure.</p>');
+  res.write(`<img src='./public/1.jpg'/> `)
+  res.write(`<img src='./public/2.jpg'/> `)
+  res.write(`<img src='./public/3.jpg'/> `)
+  res.write(`<img src='./public/4.jpg'/> `)
+  res.write(`<img src='./public/5.jpg'/> `)
   res.end();
 }).listen(port, host);
 
